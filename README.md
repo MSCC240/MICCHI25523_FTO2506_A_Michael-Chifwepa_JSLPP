@@ -47,7 +47,7 @@ It allows users to:
 -Dark/Light mode supported across all devices.
 -Proper contrast and readability in both modes.
 ## Video Walkthrough
-[Watch the video here](Link)
+[Watch the video here]([Link](https://drive.google.com/file/d/1HtqG-zDCRPOE9WsZiZlEyQgDW_HoK9Fa/view?usp=sharing&t=2))
 ## Live Link
 [Netlify Link Here](Link)
 
