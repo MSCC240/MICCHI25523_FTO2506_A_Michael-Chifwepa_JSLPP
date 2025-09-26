@@ -49,7 +49,7 @@ It allows users to:
 ## Video Walkthrough
 [Watch the video here](https://drive.google.com/file/d/1HtqG-zDCRPOE9WsZiZlEyQgDW_HoK9Fa/view?usp=sharing&t=2)
 ## Live Link
-[Netlify Link Here](Link)
+[Netlify Link Here](https://jslppkanbantaskboard.netlify.app/)
 
 
 ## Author
