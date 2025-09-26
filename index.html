@@ -1,0 +1,132 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon.svg"
+    />
+    <script defer src="./scripts.js" type="module"></script>
+    <title>Kanban Task Management</title>
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+<nav class="side-bar" id="sidebar">
+  <div id="side-logo-div">
+    <img id="logo" src="./assets/logo-light.svg" alt="logo-light" />
+  </div>
+
+  <div class="boards-nav-links-div" id="boards-nav-links-div">
+    <h4 id="headline-sidepanel">ALL BOARDS (1)</h4>
+    <button class="board-btn">Launch Career</button>
+  </div>
+
+  <!-- Sidebar footer -->
+  <div class="sidebar-footer">
+    <!-- Theme toggle -->
+    <div class="theme-toggle">
+      <span>☀️</span>
+      <label class="switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider"></span>
+      </label>
+      <span>🌑</span>
+    </div>
+
+    <!-- Hide sidebar -->
+    <button id="hideSidebar" class="hide-btn">🚫 Hide Sidebar</button>
+  </div>
+</nav>
+
+<!-- Sidebar reopen button -->
+<button id="showSidebar" class="show-sidebar-btn hidden">👀</button>
+
+    
+
+    <!-- Main Layout -->
+    <div id="layout">
+      <header id="header" class="sticky-header">
+        <div class="header-name-div">
+          <img
+            src="./assets/favicon.svg"
+            alt="logo-mobile"
+            class="logo-mobile"
+          />
+          <h2 class="header-board-name" id="header-board-name">
+            Launch Career
+          </h2>
+          <button id="add-task-btn" class="add-task-btn">+ Add New Task</button>
+        </div>
+      </header>
+
+      <div class="container">
+        <main class="card-column-main">
+          <!-- TODO -->
+          <div class="column-div" data-status="todo">
+            <div id="todo-head-div" class="column-head-div">
+              <span class="dot" id="todo-dot"></span>
+              <h4 id="toDoText" class="columnHeader">TODO</h4>
+            </div>
+            <div class="tasks-container"></div>
+          </div>
+          <!-- DOING -->
+          <div class="column-div" data-status="doing">
+            <div id="doing-head-div" class="column-head-div">
+              <span class="dot" id="doing-dot"></span>
+              <h4 id="doingText" class="columnHeader">DOING</h4>
+            </div>
+            <div class="tasks-container"></div>
+          </div>
+          <!-- DONE -->
+          <div class="column-div" data-status="done">
+            <div id="done-head-div" class="column-head-div">
+              <span class="dot" id="done-dot"></span>
+              <h4 id="doneText" class="columnHeader">DONE</h4>
+            </div>
+            <div class="tasks-container"></div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <dialog id="task-modal">
+  <form id="task-form">
+    <div class="modal-header">
+      <h3 id="modal-title">Task</h3>
+      <button type="button" class="close-btn" id="close-modal-btn">
+        &times;
+      </button>
+    </div>
+
+    <label for="task-title">Title</label>
+    <input type="text" id="task-title" name="title" required />
+
+    <label for="task-desc">Description</label>
+    <textarea id="task-desc" name="description" rows="4"></textarea>
+
+    <label for="task-status">Status</label>
+    <select id="task-status" name="status" required>
+      <option value="todo">todo</option>
+      <option value="doing">doing</option>
+      <option value="done">done</option>
+    </select>
+    <button type="button" class="save-btn" id="save-changes-btn">Save changes</button>
+    <button type="button" class="delete-btn" id="delete-task-btn">Delete task</button>
+
+    <button type="submit" class="create-task-btn" id="create-task-btn">
+      Create Task
+    </button>
+  </form>
+</dialog>
+
+  </body>
+</html>
