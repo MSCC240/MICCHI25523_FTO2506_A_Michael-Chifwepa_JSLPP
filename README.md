@@ -1,71 +1,57 @@
-📌 JSLPP Kanban Project
-📖 Project Overview
+# 📌 JSLPP Kanban App – Michael Chifwepa
 
+## Overview
 This project is a Kanban board web application built as part of the JSL Portfolio Piece (JSLPP).
 It allows users to:
 
-. Add, edit, and delete tasks.
+-Add, edit, and delete tasks.
 
-. Organize tasks across To Do, Doing, and Done columns.
+-Organize tasks across To Do, Doing, and Done columns.
 
-. Toggle between light and dark mode for better accessibility.
+-Toggle between light and dark mode for better accessibility.
 
-. Collapse/expand the sidebar (mobile + desktop).
+-Collapse/expand the sidebar (mobile + desktop).
 
-. Persist tasks in localStorage and fetch tasks from an external API.
+-Persist tasks in localStorage and fetch tasks from an external API.
 
-🚀 Features Implemented
 
-✅ Data Handling
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript (ES6+) – with modules for API handling
+- LocalStorage for persistence
+- Netlify for deployment
+- Responsive design (media queries, Flexbox/Grid)
 
-. Fetch tasks from API: https://jsl-kanban-api.vercel.app/.
+## Features
+### ✅ Data Handling
 
-. Show loading + error messages.
+-Fetch tasks from API: https://jsl-kanban-api.vercel.app/.
+-Show loading + error messages.
+-Store tasks in local storage and load them on startup.
 
-. Store tasks in local storage and load them on startup.
+### ✅ Tasks
 
-✅ Tasks
+-Add, edit, and delete tasks using a modal.
+-Deletion includes a confirmation step.
+-Updates sync with local storage.
 
-. Add, edit, and delete tasks using a modal.
+### ✅ Sidebar
 
-. Deletion includes a confirmation step.
+-Sidebar can be toggled (desktop + mobile).
+-Sidebar includes the theme switcher.
+-Mobile sidebar accessible via app logo and closable.
 
-. Updates sync with local storage.
+### ✅ Theme Toggle
 
-✅ Sidebar
+-Dark/Light mode supported across all devices.
+-Proper contrast and readability in both modes.
+## Video Walkthrough
+[Watch the video here](Link)
+## Live Link
+[Netlify Link Here](Link)
 
-. Sidebar can be toggled 
 
-. Sidebar includes the theme switcher.
+## Author
+Michael Chifwepa 
 
-. Mobile sidebar accessible via app logo and closable.
-
-✅ Theme Toggle
-
-. Dark/Light mode supported across all devices.
-
-. Proper contrast and readability in both modes.
-
-🛠️ Tech Stack
-
-. HTML5
-
-. CSS3 (Flexbox, CSS variables, media queries)
-
-. JavaScript (ES6+) – with modules for API handling
-
-. LocalStorage for persistence
-
-. Netlify for deployment
-
-🎥 Project Demo
-
-Here’s my recorded project walkthrough:
-🔗 Watch the Presentation
-
-The video is 5–10 minutes long, showing the project features, code walkthrough, and how I solved each user story.
-
-🌍 Deployment
-
-The project is live here:
-🔗 View Deployed App
